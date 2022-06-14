@@ -23,11 +23,8 @@ This dataset contains 3935 Hikes, with 19 Features, where 3 are numerical. Some 
 
 *Models*
 
-Linear Regression and Random Forest Regression were used before settling on ________.
+Linear Regression and Random Forest Regression were experimented before settling on a Random Forest Regression model which was tuned using Grid Search CV. This model was able to give an R<sup>2</sup> ~ 0.58 on the Train data and R<sup>2</sup> ~ 0.57 on the Test set. The best results were achieved by subsetting the data by the number of ratings > 10 and the features that impacted the Random Forest Regression the most. The R<sup>2</sup> is not high, and the Random Forest Regressor has low interpretability, so it is difficult to see which features had the most impact on the model. The Linear Regression model preformed quite poorly, the best R<sup>2</sup> achieved was about 0.2. The numerical data was not linear with respect to the ratings and most of the model was explained by the B<sub>0</sub> coefficient, which was essentially the average rating.
 
-*Model Evaluation and Selection*
-
- EXPLAIN MODELS HERE
 
 ### Communication
 
